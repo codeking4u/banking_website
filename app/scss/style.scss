@@ -1,5 +1,6 @@
-@import './globals';
 @import './variables';
+@import './helpers/mixins';
+@import './globals';
 
 /* components */
 @import './components/header';
