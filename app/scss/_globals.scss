@@ -15,6 +15,10 @@ body{
     font-size: $font-medium;
     font-weight: 300;
     color: $grayishBlue;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 a,a:visited, a:hover{
@@ -39,6 +43,11 @@ a,a:visited, a:hover{
     }
 
 
+}
+
+.container {
+    padding-left: 1.5rem;
+    padding-right:  1.5rem;
 }
 
 /* buttons */
