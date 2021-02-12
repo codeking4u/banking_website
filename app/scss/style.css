@@ -166,10 +166,17 @@ a, a:visited, a:hover {
 }
 
 .container--pall {
-  padding-top: 2.25rem;
+  padding-top: 4.375rem;
   padding-right: 1.5rem;
-  padding-bottom: 2.25rem;
+  padding-bottom: 4.375rem;
   padding-left: 1.5rem;
+}
+
+@media (min-width: 64em) {
+  .container--pall {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .container--px {
@@ -177,9 +184,23 @@ a, a:visited, a:hover {
   padding-left: 1.5rem;
 }
 
+@media (min-width: 64em) {
+  .container--px {
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+}
+
 .container--py {
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
+}
+
+@media (min-width: 64em) {
+  .container--py {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 /* buttons */
@@ -428,9 +449,21 @@ button:hover, .button:hover {
   }
 }
 
+.feature {
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .feature {
+    text-align: left;
+  }
+}
+
 @media (min-width: 64em) {
   .feature__intro {
     width: 60%;
+    margin-bottom: 3.75rem;
   }
 }
 
@@ -462,5 +495,35 @@ button:hover, .button:hover {
         -ms-flex: 1;
             flex: 1;
   }
+}
+
+.feature__icon {
+  margin-bottom: 1.875rem;
+}
+
+@media (min-width: 64em) {
+  .feature__icon {
+    margin-bottom: 2.75rem;
+  }
+}
+
+.feature__title {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.15;
+  color: #2d314d;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 64em) {
+  .feature__title {
+    font-size: 1.5rem;
+    margin-bottom: 2.125rem;
+  }
+}
+
+.feature__description {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
